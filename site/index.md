@@ -1,6 +1,6 @@
 # Button
 
-## Input Button
+## Input
 
 <input type="button" class="btn" value=".btn"/>
 <input type="button" class="btn btn-primary" value=".btn.btn-primary"/>
