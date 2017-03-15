@@ -1,11 +1,56 @@
+@mixin disabled() {
+  cursor: default;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .btn {
-  @include btn();
+  appearance: none;
+  background-color: $color-background;
+  border: $width-border solid $color-border;
+  border-radius: $width-border-radius;
+  color: $color-text;
+  cursor: pointer;
+  display: block;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height-input;
+  margin: $width-gap 0 0;
+  padding: $width-padding-input 2 * $width-padding-input;
+  text-align: center;
+  width: 100%;
+  // Follow the color of body text
+
+  &:focus {
+    border-color: $color-text-primary;
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+
+  &[disabled] {
+    @include disabled();
+  }
 }
 
 .btn-primary {
-  @include btn-primary();
+  background-color: $color-background-primary;
+  border-color: $color-background-primary;
+  color: $color-background;
+
+  &[disabled] {
+    @include disabled();
+  }
 }
 
 .btn-danger {
-  @include btn-danger();
+  background-color: $color-background-danger;
+  border-color: $color-background-danger;
+  color: $color-background;
+
+  &[disabled] {
+    @include disabled();
+  }
 }
