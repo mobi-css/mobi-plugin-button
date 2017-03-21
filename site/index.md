@@ -97,3 +97,13 @@
 <a href="javascript:void(0);" class="btn btn-primary" disabled>.btn.btn-primary</a>
 <a href="javascript:void(0);" class="btn btn-danger" disabled>.btn.btn-danger</a>
 ```
+
+## Block Button
+
+By default the `.btn` is a inline-block button, we can add `.btn-block` to get the block button:
+
+<input type="button" class="btn btn-block" value=".btn.btn-block"/>
+
+```html
+<input type="button" class="btn btn-block" value=".btn.btn-block"/>
+```
