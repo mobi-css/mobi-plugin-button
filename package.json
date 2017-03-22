@@ -1,6 +1,6 @@
 {
   "name": "mobi-plugin-button",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "The button plugin for Mobi.css",
   "main": "index.scss",
   "scripts": {
