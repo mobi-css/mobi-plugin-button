@@ -1,8 +1,4 @@
-/*!
- * mobi-plugin-button v0.2.4
- * https://mobi-css.github.io/mobi-plugin-button/
- */
-
+/*! mobi-plugin-button v0.2.4 https://mobi-css.github.io/mobi-plugin-button/ */
 @charset "UTF-8";
 .btn {
   -webkit-appearance: none;
@@ -20,9 +16,8 @@
   margin: 1.5rem 0 0;
   padding: 0.5rem 1rem;
   text-align: center; }
-  .btn:focus {
-    border-color: #2680d9; }
   .btn:hover, .btn:active {
+    background-color: #f2f2f2;
     text-decoration: none; }
   .btn[disabled] {
     cursor: default;
@@ -33,6 +28,8 @@
   background-color: #2680d9;
   border-color: #2680d9;
   color: white; }
+  .btn-primary:hover, .btn-primary:active {
+    background-color: #2273c3; }
   .btn-primary[disabled] {
     cursor: default;
     opacity: 0.5;
@@ -42,6 +39,8 @@
   background-color: #db5757;
   border-color: #db5757;
   color: white; }
+  .btn-danger:hover, .btn-danger:active {
+    background-color: #d74242; }
   .btn-danger[disabled] {
     cursor: default;
     opacity: 0.5;

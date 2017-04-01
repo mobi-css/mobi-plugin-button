@@ -20,12 +20,9 @@
   text-align: center;
   // Follow the color of body text
 
-  &:focus {
-    border-color: $color-text-primary;
-  }
-
   &:hover,
   &:active {
+    background-color: darken($color-background, 5%);
     text-decoration: none;
   }
 
@@ -35,9 +32,14 @@
 }
 
 .btn-primary {
-  background-color: $color-background-primary;
-  border-color: $color-background-primary;
+  background-color: $color-primary;
+  border-color: $color-primary;
   color: $color-background;
+
+  &:hover,
+  &:active {
+    background-color: darken($color-primary, 5%);
+  }
 
   &[disabled] {
     @include disabled();
@@ -45,9 +47,14 @@
 }
 
 .btn-danger {
-  background-color: $color-background-danger;
-  border-color: $color-background-danger;
+  background-color: $color-danger;
+  border-color: $color-danger;
   color: $color-background;
+
+  &:hover,
+  &:active {
+    background-color: darken($color-danger, 5%);
+  }
 
   &[disabled] {
     @include disabled();
