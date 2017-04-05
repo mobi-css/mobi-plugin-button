@@ -1,6 +1,6 @@
 {
   "name": "mobi-plugin-button",
-  "version": "0.2.7",
+  "version": "1.0.0",
   "description": "Use buttons for actions in forms, dialogs, and more.",
   "main": "index.scss",
   "scripts": {
